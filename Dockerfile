@@ -1,11 +1,11 @@
 # Build (or rebuild) using
-# docker build -t="jeffdavisco/polymer-python:latest" .
+# docker build -t="dockertutorial/polymer-python:latest" .
 
 # Pull base image.
 FROM ubuntu:latest
 
 # maintainer details
-MAINTAINER Jeff Davis "jeffdavisco@gmail.com"
+MAINTAINER Jeff Davis "raydaysha@gmail.com"
 
 # Install Python.
 RUN \
@@ -24,8 +24,8 @@ RUN mkdir -p /local/git
 WORKDIR /local/git/
 
 # Install the test webapp
-RUN git clone https://github.com/dajevu/docker-python
-WORKDIR /local/git/docker-python
+RUN git clone https://github.com/raydaysha/DockerTutorialPython.git
+WORKDIR /local/git/DockerTutorialPython
 
 #RUN chmod +x /local/git/docker-python/run.sh
 # run startup script
