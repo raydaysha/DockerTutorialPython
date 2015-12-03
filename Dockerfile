@@ -5,7 +5,7 @@
 FROM ubuntu:latest
 
 # maintainer details
-MAINTAINER Jeff Davis "raydaysha@gmail.com"
+MAINTAINER Ray Richardson "raydaysha@gmail.com"
 
 # Install Python.
 RUN \
